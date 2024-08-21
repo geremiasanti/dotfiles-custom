@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# test git
 
 function tmux-sessionizer() {
 	selected=$(find ~/dev ~/.config -mindepth 1 -maxdepth 4 -exec test -e '{}/.git' ';' -print -prune -type d | fzf)
