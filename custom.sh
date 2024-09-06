@@ -12,7 +12,6 @@ function tmux-sessionizer() {
 	fi
 
 	selected_name=$(basename "$selected" | tr . _)
-	tmux_running=$(pgrep tmux)
 
 	tmux new-session -A -s $selected_name -c $selected
 }
